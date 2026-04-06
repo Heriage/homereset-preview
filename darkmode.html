@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#FAF8F5">
+<title>HomeReset — Dark Mode & Logo</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',-apple-system,sans-serif;background:#FAF8F5;color:#1C1814;padding:env(safe-area-inset-top) 20px calc(env(safe-area-inset-bottom,16px)+16px);-webkit-font-smoothing:antialiased}
+h2{font-family:'Cormorant',serif;font-size:28px;font-weight:500;font-style:italic;margin:32px 0 6px;color:#1C1814}
+h2:first-child{margin-top:16px}
+.sub{font-size:13px;color:#9C9184;margin-bottom:20px;line-height:1.5}
+.row{display:flex;gap:12px;overflow-x:auto;padding-bottom:16px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none}.row::-webkit-scrollbar{display:none}
+.opt{min-width:85vw;max-width:320px;scroll-snap-align:center;background:#fff;border-radius:20px;border:2px solid rgba(0,0,0,0.04);box-shadow:0 2px 12px rgba(0,0,0,0.05);overflow:hidden;flex-shrink:0;-webkit-tap-highlight-color:transparent;transition:border-color .2s}
+.opt.sel{border-color:#D4764E}
+.opt-body{padding:14px 18px}
+.opt-body h3{font-size:15px;font-weight:600;margin-bottom:4px}
+.opt-body p{font-size:12px;color:#6B5C50;line-height:1.5}
+.tag{display:inline-block;font-family:'JetBrains Mono',monospace;font-size:9px;background:rgba(212,118,78,0.07);color:#D4764E;padding:2px 8px;border-radius:100px;letter-spacing:.04em;text-transform:uppercase;margin-bottom:8px}
+.phone{width:100%;aspect-ratio:9/16;max-height:420px;border-radius:24px;overflow:hidden;position:relative}
+.phone-in{width:100%;height:100%;padding:36px 16px 16px;display:flex;flex-direction:column;gap:8px}
+.mc{border-radius:14px;padding:12px 14px}
+.ms{border-radius:10px;padding:10px;flex:1;text-align:center}
+.logo-box{padding:28px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.lm{width:56px;height:56px;border-radius:50%;overflow:hidden;display:flex;box-shadow:0 4px 14px rgba(0,0,0,0.06)}
+.lm-h{width:50%;height:100%;display:flex;align-items:center;justify-content:center}
+.divider{height:1px;background:rgba(0,0,0,0.06);margin:12px 0}
+</style>
+</head>
+<body>
+
+<h2>Dark Mode</h2>
+<p class="sub">Swipe horizontal. Tippe auf dein Favorit.</p>
+
+<div class="row">
+<!-- A: Dark Warm -->
+<div class="opt" onclick="this.classList.toggle('sel')">
+<div class="phone" style="background:linear-gradient(175deg,#1C1915,#15120F,#1A1714)">
+<div class="phone-in">
+<div style="display:flex;justify-content:space-between;align-items:center"><div style="font-family:'JetBrains Mono';font-size:8px;color:rgba(255,255,255,0.3);letter-spacing:.08em;text-transform:uppercase">Good morning</div><div style="width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.06);border:1.5px solid rgba(255,255,255,0.08)"></div></div>
+<div style="font-family:'Cormorant',serif;font-size:30px;font-weight:500;font-style:italic;color:rgba(255,255,255,0.92);line-height:1">Sarah</div>
+<div style="width:20px;height:2px;background:#D4764E;border-radius:1px;opacity:.6"></div>
+<div class="mc" style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.07);margin-top:4px">
+<div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="font-family:'JetBrains Mono';font-size:8px;background:rgba(212,118,78,0.12);color:#D4764E;padding:2px 7px;border-radius:100px">IN TRANSIT</span><span style="font-family:'JetBrains Mono';font-size:8px;color:rgba(255,255,255,0.2)">#HR-2847</span></div>
+<div style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.85)">2BR — Scandi Neutral</div>
+<div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:2px">Tomorrow, 10:00 – 14:00</div>
+</div>
+<div class="mc" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06);display:flex;gap:10px;align-items:center">
+<div style="width:34px;height:34px;border-radius:10px;background:rgba(212,118,78,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="15" height="15" viewBox="0 0 24 24" stroke="#D4764E" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+<div><div style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.85)">Reset your space</div><div style="font-size:9px;color:#D4764E;margin-top:2px;font-weight:500">Configure →</div></div>
+</div>
+<div style="display:flex;gap:6px;margin-top:auto">
+<div class="ms" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06)"><div style="font-family:'Cormorant';font-size:20px;font-weight:600;color:rgba(255,255,255,0.85)">7</div><div style="font-size:8px;color:rgba(255,255,255,0.25)">Items</div></div>
+<div class="ms" style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.06)"><div style="font-family:'Cormorant';font-size:20px;font-weight:600;color:#D4764E">693</div><div style="font-size:8px;color:rgba(255,255,255,0.25)">AED/mo</div></div>
+</div>
+</div></div>
+<div class="opt-body"><span class="tag">Empfohlen</span><h3>A — Dark Warm</h3><p>Espresso-Schwarz. Terracotta glüht. Wie ein Dubai Rooftop bei Nacht. Warm, luxuriös.</p></div>
+</div>
+
+<!-- B: Dark Cool -->
+<div class="opt" onclick="this.classList.toggle('sel')">
+<div class="phone" style="background:linear-gradient(175deg,#141618,#0F1113,#161A1C)">
+<div class="phone-in">
+<div style="display:flex;justify-content:space-between;align-items:center"><div style="font-family:'JetBrains Mono';font-size:8px;color:rgba(255,255,255,0.25);letter-spacing:.08em;text-transform:uppercase">Good morning</div><div style="width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,0.05);border:1.5px solid rgba(255,255,255,0.06)"></div></div>
+<div style="font-family:'Cormorant',serif;font-size:30px;font-weight:500;font-style:italic;color:rgba(255,255,255,0.88);line-height:1">Sarah</div>
+<div style="width:20px;height:2px;background:#D4764E;border-radius:1px;opacity:.5"></div>
+<div class="mc" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);margin-top:4px">
+<div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="font-family:'JetBrains Mono';font-size:8px;background:rgba(212,118,78,0.1);color:#D4764E;padding:2px 7px;border-radius:100px">IN TRANSIT</span><span style="font-family:'JetBrains Mono';font-size:8px;color:rgba(255,255,255,0.18)">#HR-2847</span></div>
+<div style="font-size:12px;font-weight:600;color:rgba(255,255,255,0.82)">2BR — Scandi Neutral</div>
+<div style="font-size:10px;color:rgba(255,255,255,0.3);margin-top:2px">Tomorrow, 10:00 – 14:00</div>
+</div>
+<div class="mc" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04);display:flex;gap:10px;align-items:center">
+<div style="width:34px;height:34px;border-radius:10px;background:rgba(212,118,78,0.08);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="15" height="15" viewBox="0 0 24 24" stroke="#D4764E" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+<div><div style="font-size:11px;font-weight:600;color:rgba(255,255,255,0.82)">Reset your space</div><div style="font-size:9px;color:#D4764E;margin-top:2px;font-weight:500">Configure →</div></div>
+</div>
+<div style="display:flex;gap:6px;margin-top:auto">
+<div class="ms" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04)"><div style="font-family:'Cormorant';font-size:20px;font-weight:600;color:rgba(255,255,255,0.82)">7</div><div style="font-size:8px;color:rgba(255,255,255,0.2)">Items</div></div>
+<div class="ms" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.04)"><div style="font-family:'Cormorant';font-size:20px;font-weight:600;color:#D4764E">693</div><div style="font-size:8px;color:rgba(255,255,255,0.2)">AED/mo</div></div>
+</div>
+</div></div>
+<div class="opt-body"><h3>B — Dark Cool</h3><p>Kühles Anthrazit. Moderner, tech-nah. Terracotta als einziger Farbpunkt. Apple-Vibes.</p></div>
+</div>
+</div>
+
+<div class="divider" style="margin:24px 0"></div>
+
+<h2>Logo</h2>
+<p class="sub">Tippe auf dein Favorit.</p>
+
+<div class="row">
+<!-- Logo A -->
+<div class="opt" onclick="this.classList.toggle('sel')">
+<div class="logo-box" style="background:#fff">
+<div class="lm"><div class="lm-h" style="background:rgba(212,118,78,0.07)"><svg width="18" height="18" viewBox="0 0 24 24" stroke="#D4764E" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="lm-h" style="background:rgba(110,136,158,0.07)"><svg width="18" height="18" viewBox="0 0 24 24" stroke="#6E889E" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16Z"/></svg></div></div>
+<div style="font-family:'Cormorant',serif;font-size:22px;font-weight:700;letter-spacing:-.03em">Home<span style="color:#D4764E">Reset</span></div>
+</div>
+<div class="opt-body"><span class="tag">Empfohlen</span><h3>A — Split Circle</h3><p>Euer einzigartiger Split Circle als Logomark. Erzählt die Story: Reset + Storage.</p></div>
+</div>
+
+<!-- Logo B -->
+<div class="opt" onclick="this.classList.toggle('sel')">
+<div class="logo-box" style="background:#fff">
+<div style="width:56px;height:56px;border-radius:14px;background:#D4764E;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(212,118,78,0.2)"><div style="font-family:'Cormorant',serif;font-size:24px;font-weight:700;color:#fff">HR</div></div>
+<div style="font-family:'Cormorant',serif;font-size:22px;font-weight:700;letter-spacing:-.03em">Home<span style="color:#D4764E">Reset</span></div>
+</div>
+<div class="opt-body"><h3>B — Monogram</h3><p>"HR" auf Terracotta. Simpel, App-Store-tauglich, starker Favicon.</p></div>
+</div>
+
+<!-- Logo C -->
+<div class="opt" onclick="this.classList.toggle('sel')">
+<div class="logo-box" style="background:#fff">
+<div style="display:flex;align-items:center;gap:10px"><div style="width:38px;height:38px;border-radius:50%;overflow:hidden;display:flex;box-shadow:0 2px 8px rgba(0,0,0,0.05)"><div style="width:50%;background:rgba(212,118,78,0.06)"></div><div style="width:50%;background:rgba(110,136,158,0.06)"></div></div><div style="font-family:'Cormorant',serif;font-size:24px;font-weight:700;letter-spacing:-.03em">Home<span style="color:#D4764E">Reset</span></div></div>
+</div>
+<div class="opt-body"><h3>C — Wordmark + Circle</h3><p>Horizontal. Gut für Header, Navigation, Branding-Material.</p></div>
+</div>
+</div>
+
+<!-- Dark mode logo preview -->
+<div class="divider" style="margin:24px 0"></div>
+<h2>Logo auf Dark</h2>
+<p class="sub">So sieht das Logo im Dark Mode aus.</p>
+
+<div style="background:#1C1915;border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:12px">
+<div class="lm" style="box-shadow:0 4px 14px rgba(0,0,0,0.3)"><div class="lm-h" style="background:rgba(212,118,78,0.15)"><svg width="18" height="18" viewBox="0 0 24 24" stroke="#D4764E" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><div class="lm-h" style="background:rgba(110,136,158,0.12)"><svg width="18" height="18" viewBox="0 0 24 24" stroke="#6E889E" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16Z"/></svg></div></div>
+<div style="font-family:'Cormorant',serif;font-size:22px;font-weight:700;color:rgba(255,255,255,0.9);letter-spacing:-.03em">Home<span style="color:#D4764E">Reset</span></div>
+<div style="font-family:'JetBrains Mono';font-size:8px;color:rgba(255,255,255,0.25);letter-spacing:.14em;text-transform:uppercase">Dubai · Est. 2026</div>
+</div>
+
+</body></html>
